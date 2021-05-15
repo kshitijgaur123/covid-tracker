@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+*{margin: 0;}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
 }
+body{
+  background-color: #f5f6fa;
+    justify-content: space-between;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.app__left{
+  flex: 0.9;
+}
+@media (max-width: 990px){
+  .app{
+    flex-direction: column;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__right .MuiCardContent-root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow:1;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__graph{
+  flex-grow: 1;
+  
 }
